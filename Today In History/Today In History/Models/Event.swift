@@ -26,4 +26,15 @@ struct Events: Codable {
 struct Event: Codable {
     var year: String
     var text: String
+    var links: [Link]
+}
+
+struct Link: Codable {
+    var title: String
+    var url: URL
+
+    enum CodingKeys: String, CodingKey {
+        case title = "title"
+        case url = "link"
+    }
 }

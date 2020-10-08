@@ -46,6 +46,18 @@ class TodayTVC: UITableViewController {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ToEventDetailVC" {
+            
+            if let indexPath = tableView.indexPathForSelectedRow,
+               let destinationVC = segue.destination as? EventDetailVC {
+                destinationVC.event = apiController.events[indexPath.row]
+                destinationVC.apiController = apiController
+                
+            }
+        }
+    }
+    
     func configureTitle() {
         let date = Date()
         let monthString = date.month

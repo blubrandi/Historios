@@ -41,6 +41,7 @@ class APIController {
                 var events = try decoder.decode(Results.self, from: data)
                 self.events = events.data.events
                 print("From network call", events.data.events.count)
+                
 //                print(requestURL)
                 completion(nil)
             } catch {
