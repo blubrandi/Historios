@@ -16,7 +16,8 @@
 		855D4DF9252E7DF60075514C /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D4DF8252E7DF60075514C /* Event.swift */; };
 		855D4DFC252E7F450075514C /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D4DFB252E7F450075514C /* APIController.swift */; };
 		855D4E05252ECB540075514C /* EventDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D4E04252ECB540075514C /* EventDetailVC.swift */; };
-		855D4E12252EE4B30075514C /* LinkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D4E11252EE4B30075514C /* LinkDetailViewController.swift */; };
+		855D4E12252EE4B30075514C /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D4E11252EE4B30075514C /* SafariViewController.swift */; };
+		855D4E16252EEF330075514C /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D4E15252EEF320075514C /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +32,8 @@
 		855D4DF8252E7DF60075514C /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		855D4DFB252E7F450075514C /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		855D4E04252ECB540075514C /* EventDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailVC.swift; sourceTree = "<group>"; };
-		855D4E11252EE4B30075514C /* LinkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkDetailViewController.swift; sourceTree = "<group>"; };
+		855D4E11252EE4B30075514C /* SafariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariViewController.swift; sourceTree = "<group>"; };
+		855D4E15252EEF320075514C /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				855D4E09252ECB780075514C /* Models */,
 				855D4E0F252ED1BB0075514C /* Views */,
 				855D4E07252ECB670075514C /* View Controllers */,
+				855D4E15252EEF320075514C /* Date+Extension.swift */,
 			);
 			path = "Today In History";
 			sourceTree = "<group>";
@@ -81,7 +84,7 @@
 			children = (
 				855D4DF5252E7D230075514C /* TodayTVC.swift */,
 				855D4E04252ECB540075514C /* EventDetailVC.swift */,
-				855D4E11252EE4B30075514C /* LinkDetailViewController.swift */,
+				855D4E11252EE4B30075514C /* SafariViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -182,10 +185,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				855D4E05252ECB540075514C /* EventDetailVC.swift in Sources */,
-				855D4E12252EE4B30075514C /* LinkDetailViewController.swift in Sources */,
+				855D4E12252EE4B30075514C /* SafariViewController.swift in Sources */,
 				855D4DF9252E7DF60075514C /* Event.swift in Sources */,
 				855D4DDF252E780D0075514C /* AppDelegate.swift in Sources */,
 				855D4DF6252E7D230075514C /* TodayTVC.swift in Sources */,
+				855D4E16252EEF330075514C /* Date+Extension.swift in Sources */,
 				855D4DE1252E780D0075514C /* SceneDelegate.swift in Sources */,
 				855D4DFC252E7F450075514C /* APIController.swift in Sources */,
 			);

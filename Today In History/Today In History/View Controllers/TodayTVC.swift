@@ -18,7 +18,7 @@ class TodayTVC: UITableViewController {
         
         configureTitle()
 
-        apiController.getEvents { (error) in
+        apiController.getEventsForToday { (error) in
             DispatchQueue.main.async {
 
                 self.tableView.reloadData()
@@ -65,19 +65,5 @@ class TodayTVC: UITableViewController {
         
         self.title = "\(monthString) \(dayString)"
 
-    }
-}
-
-extension Date {
-    var month: String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMMM"
-        return dateFormatter.string(from: self)
-    }
-    
-    var day: String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "d"
-        return dateFormatter.string(from: self)
     }
 }

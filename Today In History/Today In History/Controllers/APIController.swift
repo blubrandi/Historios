@@ -16,9 +16,15 @@ class APIController {
     
     private var baseURL = URL(string: "https://history.muffinlabs.com/date")
 
-    func getEvents(completion: @escaping CompletionHandler = { _ in }) {
+    func getEventsForToday(completion: @escaping CompletionHandler = { _ in }) {
         
-        var requestURL = URLRequest(url: baseURL!)
+        let date = Date()
+        let monthString = date.monthNumberAsString
+        let dayString = date.day
+        
+        let todayURL = baseURL?.appendingPathComponent("/\(monthString)/\(dayString)")
+        
+        var requestURL = URLRequest(url: todayURL!)
         let task = URLSession.shared.dataTask(with: requestURL) { data, response, error in
             
             if error != nil {

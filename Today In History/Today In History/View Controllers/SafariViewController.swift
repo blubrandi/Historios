@@ -8,14 +8,22 @@
 import UIKit
 import SafariServices
 
-class LinkDetailViewController: UIViewController {
-
+class SafariViewController: UIViewController, SFSafariViewControllerDelegate {
+    
+//    var apiController: APIController?
+//    var event: Event?
+//    var link: Link?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+//        safariVC.delegate = self
     }
     
+    
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        controller.dismiss(animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation
@@ -26,5 +34,6 @@ class LinkDetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
 
 }

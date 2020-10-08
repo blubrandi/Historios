@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import SafariServices
 
-class EventDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class EventDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource, SFSafariViewControllerDelegate {
     
     
     var apiController: APIController?
@@ -40,8 +41,30 @@ class EventDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         return cell!
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let link = event?.links[indexPath.row]
+        
+        guard let url = link?.url else { return }
+        
+        let safariVC = SFSafariViewController(url: url)
+        present(safariVC, animated: true, completion: nil)
+    }
+    
     func configureViews() {
         eventTextLabel.text = event?.text
         linksTableView.tableFooterView = UIView()
     }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "ToLinkDetail" {
+//            
+//            if let indexPath = linksTableView.indexPathForSelectedRow,
+//               let destinationVC = segue.destination as? safariVC {
+//                
+//                destinationVC.link = event!.links[indexPath.row]
+//                destinationVC.apiController = apiController
+//                
+//            }
+//        }
+//    }
 }
