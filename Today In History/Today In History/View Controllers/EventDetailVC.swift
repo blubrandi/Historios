@@ -33,10 +33,12 @@ class EventDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LinkCell")
-            
         let link = event?.links[indexPath.row]
         
         cell?.textLabel?.text = link?.title
+        cell?.textLabel?.lineBreakMode = .byWordWrapping
+        cell?.textLabel?.numberOfLines = 5
+        cell?.textLabel?.textColor = #colorLiteral(red: 0.2127646208, green: 0.1895925999, blue: 0.1618997753, alpha: 1)
         
         return cell!
     }
@@ -51,7 +53,11 @@ class EventDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     }
     
     func configureViews() {
+        self.title = "Today in year \(event!.year)"
+        
         eventTextLabel.text = event?.text
+        eventTextLabel.textColor = #colorLiteral(red: 0.2127646208, green: 0.1895925999, blue: 0.1618997753, alpha: 1)
+        
         linksTableView.tableFooterView = UIView()
     }
     

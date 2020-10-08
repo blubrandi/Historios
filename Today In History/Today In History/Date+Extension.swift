@@ -26,4 +26,10 @@ extension Date {
         dateFormatter.dateFormat = "MM"
         return dateFormatter.string(from: self)
     }
+    
+    var dateText: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMMM dd, YYYY"
+        return dateFormatter.string(from: self)
+    }
 }
