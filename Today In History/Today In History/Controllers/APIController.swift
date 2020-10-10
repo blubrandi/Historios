@@ -20,7 +20,9 @@ class APIController {
         
         let date = Date()
         let monthString = date.monthNumberAsString
+//        let monthString = "9"
         let dayString = date.day
+//        let dayString = "31"
         
         let todayURL = baseURL?.appendingPathComponent("/\(monthString)/\(dayString)")
         
@@ -47,6 +49,7 @@ class APIController {
                 var events = try decoder.decode(Results.self, from: data)
                 self.events = events.data.events
                 print("From network call", events.data.events.count)
+                print(response)
                 
 //                print(requestURL)
                 completion(nil)

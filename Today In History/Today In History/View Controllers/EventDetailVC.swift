@@ -38,7 +38,7 @@ class EventDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         cell?.textLabel?.text = link?.title
         cell?.textLabel?.lineBreakMode = .byWordWrapping
         cell?.textLabel?.numberOfLines = 5
-        cell?.textLabel?.textColor = #colorLiteral(red: 0.2127646208, green: 0.1895925999, blue: 0.1618997753, alpha: 1)
+//        cell?.textLabel?.textColor = #colorLiteral(red: 0.2127646208, green: 0.1895925999, blue: 0.1618997753, alpha: 1)
         
         return cell!
     }
@@ -56,21 +56,10 @@ class EventDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         self.title = "Today in year \(event!.year)"
         
         eventTextLabel.text = event?.text
-        eventTextLabel.textColor = #colorLiteral(red: 0.2127646208, green: 0.1895925999, blue: 0.1618997753, alpha: 1)
+//        eventTextLabel.textColor = #colorLiteral(red: 0.2127646208, green: 0.1895925999, blue: 0.1618997753, alpha: 1)
         
         linksTableView.tableFooterView = UIView()
+        linksTableView.backgroundColor = .white
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "ToLinkDetail" {
-//            
-//            if let indexPath = linksTableView.indexPathForSelectedRow,
-//               let destinationVC = segue.destination as? safariVC {
-//                
-//                destinationVC.link = event!.links[indexPath.row]
-//                destinationVC.apiController = apiController
-//                
-//            }
-//        }
-//    }
 }
