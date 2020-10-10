@@ -20,9 +20,7 @@ class APIController {
         
         let date = Date()
         let monthString = date.monthNumberAsString
-//        let monthString = "9"
         let dayString = date.day
-//        let dayString = "31"
         
         let todayURL = baseURL?.appendingPathComponent("/\(monthString)/\(dayString)")
         
@@ -54,6 +52,48 @@ class APIController {
 //                print(requestURL)
                 completion(nil)
             } catch {
+                print("We hit catch")
+                print(error)
+                completion(error)
+                return
+            }
+        }
+        task.resume()
+    }
+    
+    func getSelectedEvents(month: String, day: String, completion: @escaping CompletionHandler = { _ in }) {
+        
+        let selectedDayURL = baseURL?.appendingPathComponent("/\(month)/\(day)")
+        
+        var requestURL = URLRequest(url: selectedDayURL!)
+        let task = URLSession.shared.dataTask(with: requestURL) { data, response, error in
+            
+            if error != nil {
+                print(error)
+                print("We hit error")
+                completion(error)
+                return
+            }
+            
+            guard let data = data else {
+                print("We hit data")
+                completion(NSError())
+                return
+            }
+            
+            let decoder = JSONDecoder()
+            
+            do {
+                print("We hit decode")
+                var events = try decoder.decode(Results.self, from: data)
+                self.events = events.data.events
+                print("From network call", events.data.events.count)
+                print(response)
+                
+//                print(requestURL)
+                completion(nil)
+            } catch {
+                print(requestURL)
                 print("We hit catch")
                 print(error)
                 completion(error)

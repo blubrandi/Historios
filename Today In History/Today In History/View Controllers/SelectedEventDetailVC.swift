@@ -1,26 +1,26 @@
 //
-//  EventDetailVC.swift
+//  SelectedEventViewController.swift
 //  Today In History
 //
-//  Created by Brandi Taylor on 10/7/20.
+//  Created by Brandi Taylor on 10/10/20.
 //
 
 import UIKit
 import SafariServices
 
-class EventDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource, SFSafariViewControllerDelegate {
+class SelectedEventDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource, SFSafariViewControllerDelegate {
     
     var apiController: APIController?
     var event: Event?
     
-    @IBOutlet weak var linksTableView: UITableView!
-    @IBOutlet weak var eventTextLabel: UILabel!
+    @IBOutlet weak var selectedEventLabel: UILabel!
+    @IBOutlet weak var selectedEventLinksTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         configureViews()
-    
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -31,7 +31,7 @@ class EventDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "LinkCell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SelectedEventLinkCell")
         let link = event?.links[indexPath.row]
         
         cell?.textLabel?.text = link?.title
@@ -51,12 +51,12 @@ class EventDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     }
     
     func configureViews() {
-        self.title = "Today in year \(event!.year)"
+//        self.title = " in year \(event!.year)"
         
-        eventTextLabel.text = event?.text
+        selectedEventLabel.text = event?.text
         
-        linksTableView.tableFooterView = UIView()
-        linksTableView.backgroundColor = .white
+        selectedEventLinksTableView.tableFooterView = UIView()
+        selectedEventLabel.backgroundColor = .white
     }
     
 }

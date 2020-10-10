@@ -13,6 +13,7 @@ class SelectDateVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var warningLabel: UILabel!
+    @IBOutlet weak var getEventsButton: UIButton!
     
     let months: [String] = ["Select Month", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
     
@@ -35,7 +36,10 @@ class SelectDateVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         warningLabel.isHidden = true
         
         monthLabel.text = "Select Month"
-        dayLabel.text = "Select Month"
+        dayLabel.text = "Select Day"
+        
+        getEventsButton.isEnabled = false
+        
     }
     
     
@@ -73,12 +77,33 @@ class SelectDateVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         
         if monthsWithTwentyNineDaysNotAllowed.contains(selectedDay) && monthsWithTwentyNineDays.contains(selectedMonth) {
             warningLabel.isHidden = false
-            warningLabel.text = "\(selectedMonth) only has 29 days.  Please select a different day."
+            warningLabel.text = "‼️ \(selectedMonth) only has 29 days.  Please select a different day."
+            getEventsButton.isEnabled = false
         } else if monthsWithThirtyDaysNotAllowed.contains(selectedDay) && monthsWithThirtyDays.contains(selectedMonth) {
             warningLabel.isHidden = false
-            warningLabel.text = "\(selectedMonth) only has 30 days.  Please select a different day."
+            warningLabel.text = "‼️ \(selectedMonth) only has 30 days.  Please select a different day."
+            getEventsButton.isEnabled = false
+        } else if monthLabel.text == "Select Month" {
+            getEventsButton.isEnabled = false
+        } else if dayLabel.text == "Select Day" {
+            getEventsButton.isEnabled = false
         } else {
             warningLabel.isHidden = true
+            getEventsButton.isEnabled = true
+        }
+    }
+    
+    @IBAction func getEventsTapped(_ sender: Any) {
+        print(selectedMonth)
+        print(selectedDay)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ToGetSelectedTVC" {
+            if let destinationVC = segue.destination as? GetSelectedTVC {
+                destinationVC.month = selectedMonth
+                destinationVC.day = selectedDay
+            }
         }
     }
     

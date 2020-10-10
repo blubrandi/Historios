@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		853A4D5025318976007F778B /* GetSelectedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853A4D4F25318976007F778B /* GetSelectedTVC.swift */; };
+		853A4D5325318A62007F778B /* SelectedEventDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853A4D5225318A62007F778B /* SelectedEventDetailVC.swift */; };
 		855D4DDF252E780D0075514C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D4DDE252E780D0075514C /* AppDelegate.swift */; };
 		855D4DE1252E780D0075514C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D4DE0252E780D0075514C /* SceneDelegate.swift */; };
 		855D4DE6252E780D0075514C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855D4DE4252E780D0075514C /* Main.storyboard */; };
@@ -19,11 +21,12 @@
 		855D4E12252EE4B30075514C /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D4E11252EE4B30075514C /* SafariViewController.swift */; };
 		855D4E16252EEF330075514C /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D4E15252EEF320075514C /* Date+Extension.swift */; };
 		855D4E1C252F91DC0075514C /* StartingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D4E1B252F91DC0075514C /* StartingVC.swift */; };
-		8587362D252FBBAE0047A13D /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8587362C252FBBAE0047A13D /* MenuVC.swift */; };
 		85873639253053560047A13D /* SelectDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85873638253053560047A13D /* SelectDateVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		853A4D4F25318976007F778B /* GetSelectedTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSelectedTVC.swift; sourceTree = "<group>"; };
+		853A4D5225318A62007F778B /* SelectedEventDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedEventDetailVC.swift; sourceTree = "<group>"; };
 		855D4DDB252E780D0075514C /* Today In History.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Today In History.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		855D4DDE252E780D0075514C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		855D4DE0252E780D0075514C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,7 +41,6 @@
 		855D4E11252EE4B30075514C /* SafariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariViewController.swift; sourceTree = "<group>"; };
 		855D4E15252EEF320075514C /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		855D4E1B252F91DC0075514C /* StartingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingVC.swift; sourceTree = "<group>"; };
-		8587362C252FBBAE0047A13D /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		85873638253053560047A13D /* SelectDateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDateVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,8 +94,9 @@
 				855D4E04252ECB540075514C /* EventDetailVC.swift */,
 				855D4E11252EE4B30075514C /* SafariViewController.swift */,
 				855D4E1B252F91DC0075514C /* StartingVC.swift */,
-				8587362C252FBBAE0047A13D /* MenuVC.swift */,
 				85873638253053560047A13D /* SelectDateVC.swift */,
+				853A4D4F25318976007F778B /* GetSelectedTVC.swift */,
+				853A4D5225318A62007F778B /* SelectedEventDetailVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -193,15 +196,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				853A4D5325318A62007F778B /* SelectedEventDetailVC.swift in Sources */,
 				855D4E05252ECB540075514C /* EventDetailVC.swift in Sources */,
 				855D4E12252EE4B30075514C /* SafariViewController.swift in Sources */,
 				855D4E1C252F91DC0075514C /* StartingVC.swift in Sources */,
 				855D4DF9252E7DF60075514C /* Event.swift in Sources */,
 				855D4DDF252E780D0075514C /* AppDelegate.swift in Sources */,
 				855D4DF6252E7D230075514C /* TodayTVC.swift in Sources */,
-				8587362D252FBBAE0047A13D /* MenuVC.swift in Sources */,
 				855D4E16252EEF330075514C /* Date+Extension.swift in Sources */,
 				85873639253053560047A13D /* SelectDateVC.swift in Sources */,
+				853A4D5025318976007F778B /* GetSelectedTVC.swift in Sources */,
 				855D4DE1252E780D0075514C /* SceneDelegate.swift in Sources */,
 				855D4DFC252E7F450075514C /* APIController.swift in Sources */,
 			);

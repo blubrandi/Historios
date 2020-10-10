@@ -40,11 +40,8 @@ class TodayTVC: UITableViewController {
         
         let event = apiController.events[indexPath.row]
         
-        cell.textLabel?.text = "Year: \(event.year)"
-//        cell.textLabel?.textColor = #colorLiteral(red: 0.1541212201, green: 0.137329489, blue: 0.1172864512, alpha: 1)
-        
+        cell.textLabel?.text = "Year: \(event.year)"        
         cell.detailTextLabel?.text = event.text
-//        cell.detailTextLabel?.textColor = #colorLiteral(red: 0.1541212201, green: 0.137329489, blue: 0.1172864512, alpha: 1)
 
         return cell
     }
