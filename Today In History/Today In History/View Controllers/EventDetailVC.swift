@@ -11,16 +11,17 @@ import SafariServices
 class EventDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource, SFSafariViewControllerDelegate {
     
     var apiController: APIController?
+    var persistenceController: PersistenceController?
     var event: Event?
     
     @IBOutlet weak var linksTableView: UITableView!
     @IBOutlet weak var eventTextLabel: UILabel!
+    @IBOutlet weak var bookmarkButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         configureViews()
-    
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -57,6 +58,25 @@ class EventDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         
         linksTableView.tableFooterView = UIView()
         linksTableView.backgroundColor = .white
+        
+//        guard let bookmarkedEventsToCheck = persistenceController?.bookmarkedEvents else { return }
+        
+//        for bookmarkedEvent in bookmarkedEventsToCheck {
+//            if bookmarkedEvent.text == event?.text {
+//                bookmarkButton.image(for: .normal) = ✓
+//
+//            }
+//        }
+    }
+    
+    @IBAction func bookmarkButtonTapped(_ sender: Any) {
+        
+        guard let event = event else { return }
+        guard let bookmarkLinks = event.links as? [BookmarkedEventLink] else { return }
+        
+        persistenceController?.createBookmarkedEvent(withText: event.text, withYear: event.year, withLinks: bookmarkLinks, isBookmarked: true)
+        
+        print(persistenceController?.bookmarkedEvents.count)
     }
     
 }

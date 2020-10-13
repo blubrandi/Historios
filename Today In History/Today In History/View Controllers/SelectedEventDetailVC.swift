@@ -13,7 +13,7 @@ class SelectedEventDetailVC: UIViewController, UITableViewDelegate, UITableViewD
     var apiController: APIController?
     var event: Event?
     
-    @IBOutlet weak var selectedEventLabel: UILabel!
+    @IBOutlet weak var selectedEventTextView: UITextView!
     @IBOutlet weak var selectedEventLinksTableView: UITableView!
     
     override func viewDidLoad() {
@@ -53,10 +53,13 @@ class SelectedEventDetailVC: UIViewController, UITableViewDelegate, UITableViewD
     func configureViews() {
 //        self.title = " in year \(event!.year)"
         
-        selectedEventLabel.text = event?.text
+        let combined = event!.text + event!.text + event!.text
+        
+//        selectedEventLabel.text = event?.text
+        selectedEventTextView.text = combined
         
         selectedEventLinksTableView.tableFooterView = UIView()
-        selectedEventLabel.backgroundColor = .white
+        selectedEventLinksTableView.backgroundColor = .white
     }
     
 }

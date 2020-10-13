@@ -50,7 +50,7 @@ class TodayTVC: UITableViewController {
         if segue.identifier == "ToEventDetailVC" {
             
             if let indexPath = tableView.indexPathForSelectedRow,
-               let destinationVC = segue.destination as? EventDetailVC {
+               let destinationVC = segue.destination as? SelectedEventDetailVC {
                 destinationVC.event = apiController.events[indexPath.row]
                 destinationVC.apiController = apiController
                 
@@ -64,6 +64,9 @@ class TodayTVC: UITableViewController {
         let dayString = date.day
         
         self.title = "\(monthString) \(dayString)"
+        tableView.tableFooterView = UIView()
+        tableView.backgroundColor = .white
 
+        
     }
 }

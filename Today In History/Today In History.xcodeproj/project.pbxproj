@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		853A4D5025318976007F778B /* GetSelectedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853A4D4F25318976007F778B /* GetSelectedTVC.swift */; };
 		853A4D5325318A62007F778B /* SelectedEventDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853A4D5225318A62007F778B /* SelectedEventDetailVC.swift */; };
+		853A4D5A25319F58007F778B /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853A4D5925319F58007F778B /* PersistenceController.swift */; };
+		853A4D5E2531A2C3007F778B /* BookmarkedEventTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853A4D5D2531A2C3007F778B /* BookmarkedEventTVC.swift */; };
 		855D4DDF252E780D0075514C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D4DDE252E780D0075514C /* AppDelegate.swift */; };
 		855D4DE1252E780D0075514C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D4DE0252E780D0075514C /* SceneDelegate.swift */; };
 		855D4DE6252E780D0075514C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855D4DE4252E780D0075514C /* Main.storyboard */; };
@@ -22,11 +24,14 @@
 		855D4E16252EEF330075514C /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D4E15252EEF320075514C /* Date+Extension.swift */; };
 		855D4E1C252F91DC0075514C /* StartingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D4E1B252F91DC0075514C /* StartingVC.swift */; };
 		85873639253053560047A13D /* SelectDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85873638253053560047A13D /* SelectDateVC.swift */; };
+		8597D92A2531AD9000DC5F87 /* BookmarkedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8597D9292531AD9000DC5F87 /* BookmarkedEvent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		853A4D4F25318976007F778B /* GetSelectedTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSelectedTVC.swift; sourceTree = "<group>"; };
 		853A4D5225318A62007F778B /* SelectedEventDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedEventDetailVC.swift; sourceTree = "<group>"; };
+		853A4D5925319F58007F778B /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		853A4D5D2531A2C3007F778B /* BookmarkedEventTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkedEventTVC.swift; sourceTree = "<group>"; };
 		855D4DDB252E780D0075514C /* Today In History.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Today In History.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		855D4DDE252E780D0075514C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		855D4DE0252E780D0075514C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +47,7 @@
 		855D4E15252EEF320075514C /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		855D4E1B252F91DC0075514C /* StartingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingVC.swift; sourceTree = "<group>"; };
 		85873638253053560047A13D /* SelectDateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDateVC.swift; sourceTree = "<group>"; };
+		8597D9292531AD9000DC5F87 /* BookmarkedEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkedEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 				85873638253053560047A13D /* SelectDateVC.swift */,
 				853A4D4F25318976007F778B /* GetSelectedTVC.swift */,
 				853A4D5225318A62007F778B /* SelectedEventDetailVC.swift */,
+				853A4D5D2531A2C3007F778B /* BookmarkedEventTVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -105,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				855D4DF8252E7DF60075514C /* Event.swift */,
+				8597D9292531AD9000DC5F87 /* BookmarkedEvent.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -113,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				855D4DFB252E7F450075514C /* APIController.swift */,
+				853A4D5925319F58007F778B /* PersistenceController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -198,12 +207,15 @@
 			files = (
 				853A4D5325318A62007F778B /* SelectedEventDetailVC.swift in Sources */,
 				855D4E05252ECB540075514C /* EventDetailVC.swift in Sources */,
+				853A4D5E2531A2C3007F778B /* BookmarkedEventTVC.swift in Sources */,
 				855D4E12252EE4B30075514C /* SafariViewController.swift in Sources */,
 				855D4E1C252F91DC0075514C /* StartingVC.swift in Sources */,
 				855D4DF9252E7DF60075514C /* Event.swift in Sources */,
 				855D4DDF252E780D0075514C /* AppDelegate.swift in Sources */,
 				855D4DF6252E7D230075514C /* TodayTVC.swift in Sources */,
+				8597D92A2531AD9000DC5F87 /* BookmarkedEvent.swift in Sources */,
 				855D4E16252EEF330075514C /* Date+Extension.swift in Sources */,
+				853A4D5A25319F58007F778B /* PersistenceController.swift in Sources */,
 				85873639253053560047A13D /* SelectDateVC.swift in Sources */,
 				853A4D5025318976007F778B /* GetSelectedTVC.swift in Sources */,
 				855D4DE1252E780D0075514C /* SceneDelegate.swift in Sources */,
