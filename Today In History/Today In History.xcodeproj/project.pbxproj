@@ -7,31 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		853A4D5025318976007F778B /* GetSelectedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853A4D4F25318976007F778B /* GetSelectedTVC.swift */; };
-		853A4D5325318A62007F778B /* SelectedEventDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853A4D5225318A62007F778B /* SelectedEventDetailVC.swift */; };
+		851F27C6257A2D8D00FE34A2 /* TableviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851F27C5257A2D8D00FE34A2 /* TableviewHelper.swift */; };
+		853A4D5325318A62007F778B /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853A4D5225318A62007F778B /* EventDetailViewController.swift */; };
 		853A4D5A25319F58007F778B /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853A4D5925319F58007F778B /* PersistenceController.swift */; };
-		853A4D5E2531A2C3007F778B /* BookmarkedEventTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853A4D5D2531A2C3007F778B /* BookmarkedEventTVC.swift */; };
+		853A4D5E2531A2C3007F778B /* BookmarksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853A4D5D2531A2C3007F778B /* BookmarksTableViewController.swift */; };
 		855D4DDF252E780D0075514C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D4DDE252E780D0075514C /* AppDelegate.swift */; };
 		855D4DE1252E780D0075514C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D4DE0252E780D0075514C /* SceneDelegate.swift */; };
 		855D4DE6252E780D0075514C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855D4DE4252E780D0075514C /* Main.storyboard */; };
 		855D4DE8252E780E0075514C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 855D4DE7252E780E0075514C /* Assets.xcassets */; };
 		855D4DEB252E780E0075514C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855D4DE9252E780E0075514C /* LaunchScreen.storyboard */; };
-		855D4DF6252E7D230075514C /* TodayTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D4DF5252E7D230075514C /* TodayTVC.swift */; };
+		855D4DF6252E7D230075514C /* EventsResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D4DF5252E7D230075514C /* EventsResultsTableViewController.swift */; };
 		855D4DF9252E7DF60075514C /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D4DF8252E7DF60075514C /* Event.swift */; };
 		855D4DFC252E7F450075514C /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D4DFB252E7F450075514C /* APIController.swift */; };
-		855D4E05252ECB540075514C /* EventDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D4E04252ECB540075514C /* EventDetailVC.swift */; };
-		855D4E12252EE4B30075514C /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D4E11252EE4B30075514C /* SafariViewController.swift */; };
 		855D4E16252EEF330075514C /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D4E15252EEF320075514C /* Date+Extension.swift */; };
-		855D4E1C252F91DC0075514C /* StartingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D4E1B252F91DC0075514C /* StartingVC.swift */; };
-		85873639253053560047A13D /* SelectDateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85873638253053560047A13D /* SelectDateVC.swift */; };
+		85873639253053560047A13D /* SelectDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85873638253053560047A13D /* SelectDateViewController.swift */; };
 		8597D92A2531AD9000DC5F87 /* BookmarkedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8597D9292531AD9000DC5F87 /* BookmarkedEvent.swift */; };
+		85ECEE0E25776BB600B16AAA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85ECEE0D25776BB600B16AAA /* HomeViewController.swift */; };
+		85ECEE332578455C00B16AAA /* BookmarkedEventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85ECEE322578455C00B16AAA /* BookmarkedEventDetailViewController.swift */; };
+		85ECEE3D2578B19200B16AAA /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85ECEE3C2578B19200B16AAA /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		853A4D4F25318976007F778B /* GetSelectedTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSelectedTVC.swift; sourceTree = "<group>"; };
-		853A4D5225318A62007F778B /* SelectedEventDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedEventDetailVC.swift; sourceTree = "<group>"; };
+		851F27C5257A2D8D00FE34A2 /* TableviewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableviewHelper.swift; sourceTree = "<group>"; };
+		853A4D5225318A62007F778B /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		853A4D5925319F58007F778B /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
-		853A4D5D2531A2C3007F778B /* BookmarkedEventTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkedEventTVC.swift; sourceTree = "<group>"; };
+		853A4D5D2531A2C3007F778B /* BookmarksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksTableViewController.swift; sourceTree = "<group>"; };
 		855D4DDB252E780D0075514C /* Today In History.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Today In History.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		855D4DDE252E780D0075514C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		855D4DE0252E780D0075514C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,15 +39,15 @@
 		855D4DE7252E780E0075514C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		855D4DEA252E780E0075514C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		855D4DEC252E780E0075514C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		855D4DF5252E7D230075514C /* TodayTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTVC.swift; sourceTree = "<group>"; };
+		855D4DF5252E7D230075514C /* EventsResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsResultsTableViewController.swift; sourceTree = "<group>"; };
 		855D4DF8252E7DF60075514C /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		855D4DFB252E7F450075514C /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
-		855D4E04252ECB540075514C /* EventDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailVC.swift; sourceTree = "<group>"; };
-		855D4E11252EE4B30075514C /* SafariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariViewController.swift; sourceTree = "<group>"; };
 		855D4E15252EEF320075514C /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
-		855D4E1B252F91DC0075514C /* StartingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingVC.swift; sourceTree = "<group>"; };
-		85873638253053560047A13D /* SelectDateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDateVC.swift; sourceTree = "<group>"; };
+		85873638253053560047A13D /* SelectDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDateViewController.swift; sourceTree = "<group>"; };
 		8597D9292531AD9000DC5F87 /* BookmarkedEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkedEvent.swift; sourceTree = "<group>"; };
+		85ECEE0D25776BB600B16AAA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		85ECEE322578455C00B16AAA /* BookmarkedEventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkedEventDetailViewController.swift; sourceTree = "<group>"; };
+		85ECEE3C2578B19200B16AAA /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +89,7 @@
 				855D4E0F252ED1BB0075514C /* Views */,
 				855D4E07252ECB670075514C /* View Controllers */,
 				855D4E15252EEF320075514C /* Date+Extension.swift */,
+				851F27C5257A2D8D00FE34A2 /* TableviewHelper.swift */,
 			);
 			path = "Today In History";
 			sourceTree = "<group>";
@@ -96,14 +97,13 @@
 		855D4E07252ECB670075514C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				855D4DF5252E7D230075514C /* TodayTVC.swift */,
-				855D4E04252ECB540075514C /* EventDetailVC.swift */,
-				855D4E11252EE4B30075514C /* SafariViewController.swift */,
-				855D4E1B252F91DC0075514C /* StartingVC.swift */,
-				85873638253053560047A13D /* SelectDateVC.swift */,
-				853A4D4F25318976007F778B /* GetSelectedTVC.swift */,
-				853A4D5225318A62007F778B /* SelectedEventDetailVC.swift */,
-				853A4D5D2531A2C3007F778B /* BookmarkedEventTVC.swift */,
+				85ECEE0D25776BB600B16AAA /* HomeViewController.swift */,
+				855D4DF5252E7D230075514C /* EventsResultsTableViewController.swift */,
+				853A4D5225318A62007F778B /* EventDetailViewController.swift */,
+				85873638253053560047A13D /* SelectDateViewController.swift */,
+				853A4D5D2531A2C3007F778B /* BookmarksTableViewController.swift */,
+				85ECEE322578455C00B16AAA /* BookmarkedEventDetailViewController.swift */,
+				85ECEE3C2578B19200B16AAA /* InfoViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -205,19 +205,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				853A4D5325318A62007F778B /* SelectedEventDetailVC.swift in Sources */,
-				855D4E05252ECB540075514C /* EventDetailVC.swift in Sources */,
-				853A4D5E2531A2C3007F778B /* BookmarkedEventTVC.swift in Sources */,
-				855D4E12252EE4B30075514C /* SafariViewController.swift in Sources */,
-				855D4E1C252F91DC0075514C /* StartingVC.swift in Sources */,
+				85ECEE332578455C00B16AAA /* BookmarkedEventDetailViewController.swift in Sources */,
+				853A4D5325318A62007F778B /* EventDetailViewController.swift in Sources */,
+				853A4D5E2531A2C3007F778B /* BookmarksTableViewController.swift in Sources */,
 				855D4DF9252E7DF60075514C /* Event.swift in Sources */,
+				85ECEE3D2578B19200B16AAA /* InfoViewController.swift in Sources */,
+				851F27C6257A2D8D00FE34A2 /* TableviewHelper.swift in Sources */,
 				855D4DDF252E780D0075514C /* AppDelegate.swift in Sources */,
-				855D4DF6252E7D230075514C /* TodayTVC.swift in Sources */,
+				855D4DF6252E7D230075514C /* EventsResultsTableViewController.swift in Sources */,
 				8597D92A2531AD9000DC5F87 /* BookmarkedEvent.swift in Sources */,
+				85ECEE0E25776BB600B16AAA /* HomeViewController.swift in Sources */,
 				855D4E16252EEF330075514C /* Date+Extension.swift in Sources */,
 				853A4D5A25319F58007F778B /* PersistenceController.swift in Sources */,
-				85873639253053560047A13D /* SelectDateVC.swift in Sources */,
-				853A4D5025318976007F778B /* GetSelectedTVC.swift in Sources */,
+				85873639253053560047A13D /* SelectDateViewController.swift in Sources */,
 				855D4DE1252E780D0075514C /* SceneDelegate.swift in Sources */,
 				855D4DFC252E7F450075514C /* APIController.swift in Sources */,
 			);
@@ -373,7 +373,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Squee.Today-In-History";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Squee.This-Day-In-History";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -392,7 +392,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Squee.Today-In-History";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Squee.This-Day-In-History";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

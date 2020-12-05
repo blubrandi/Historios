@@ -11,14 +11,23 @@ class PersistenceController {
     
     var bookmarkedEvents: [BookmarkedEvent] = []
     
-    func createBookmarkedEvent(withText text: String, withYear year: String, withLinks links: [BookmarkedEventLink], isBookmarked: Bool) -> BookmarkedEvent {
+    func createBookmarkedEvent(withDate date: String, withText text: String, withYear year: String, withLinks links: [Link], isBookmarked: Bool) -> BookmarkedEvent {
         
-        let starredEvent = BookmarkedEvent(year: year, text: text, links: links, isBookmarked: true)
+        let starredEvent = BookmarkedEvent(date: date, year: year, text: text, links: links, isBookmarked: true)
         bookmarkedEvents.append(starredEvent)
         
         saveToPersistence()
+        print("saved!")
         
         return starredEvent
+    }
+    
+    func removeBookmarkedEvent(bookmarkedEvent: BookmarkedEvent) {
+        guard let index = bookmarkedEvents.firstIndex(of: bookmarkedEvent) else { return }
+        bookmarkedEvents.remove(at: index)
+        
+        saveToPersistence()
+        
     }
     
     private var bookmarkedEventsURL: URL? {
@@ -50,9 +59,8 @@ class PersistenceController {
                  let decoder = PropertyListDecoder()
              
              bookmarkedEvents = try decoder.decode([BookmarkedEvent].self, from: data)
-             print("Count from persisitence load: ", bookmarkedEvents.count)
          } catch {
-             print("Could not load starred events from persistence")
+//             print("Could not load starred events from persistence")
          }
      }
 }

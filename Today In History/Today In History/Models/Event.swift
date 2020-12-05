@@ -7,34 +7,37 @@
 
 import Foundation
 
-import Foundation
-
 struct Results: Codable {
-    var date: String
-    var url: String
-    var data: Events
-}
-
-struct Events: Codable {
-    var events: [Event]
+    var date: String?
+    var url: String?
+    var data: [Event]?
     
     enum CodingKeys: String, CodingKey {
-        case events = "Events"
+        case date
+        case url = "wikipedia"
+        case data = "events"
     }
+    
 }
 
 struct Event: Codable {
-    var year: String
-    var text: String
-    var links: [Link]
+    var year: String?
+    var text: String?
+    var links: [Link]?
+    
+    enum CodingKeys: String, CodingKey {
+        case year
+        case text = "description"
+        case links = "wikipedia"
+    }
 }
 
 struct Link: Codable {
-    var title: String
-    var url: URL
+    var title: String?
+    var url: URL?
 
     enum CodingKeys: String, CodingKey {
-        case title = "title"
-        case url = "link"
+        case title
+        case url = "wikipedia"
     }
 }

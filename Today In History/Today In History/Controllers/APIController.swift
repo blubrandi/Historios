@@ -11,72 +11,25 @@ class APIController {
     
     var events: [Event] = []
     var event: Event?
+    var date: String?
     
     typealias CompletionHandler = (Error?) -> Void
     
-    private var baseURL = URL(string: "https://history.muffinlabs.com/date")
-
-    func getEventsForToday(completion: @escaping CompletionHandler = { _ in }) {
-        
-        let date = Date()
-        let monthString = date.monthNumberAsString
-        let dayString = date.day
-        
-        let todayURL = baseURL?.appendingPathComponent("/\(monthString)/\(dayString)")
-        
-        var requestURL = URLRequest(url: todayURL!)
-        let task = URLSession.shared.dataTask(with: requestURL) { data, response, error in
-            
-            if error != nil {
-                print(error)
-                print("We hit error")
-                completion(error)
-                return
-            }
-            
-            guard let data = data else {
-                print("We hit data")
-                completion(NSError())
-                return
-            }
-            
-            let decoder = JSONDecoder()
-            
-            do {
-                print("We hit decode")
-                var events = try decoder.decode(Results.self, from: data)
-                self.events = events.data.events
-                print("From network call", events.data.events.count)
-                print(response)
-                
-//                print(requestURL)
-                completion(nil)
-            } catch {
-                print("We hit catch")
-                print(error)
-                completion(error)
-                return
-            }
-        }
-        task.resume()
-    }
+    private var baseURL = URL(string: "https://byabbe.se/on-this-day")
     
     func getSelectedEvents(month: String, day: String, completion: @escaping CompletionHandler = { _ in }) {
         
-        let selectedDayURL = baseURL?.appendingPathComponent("/\(month)/\(day)")
+        let selectedDayURL = baseURL?.appendingPathComponent("/\(month)/\(day)/events.json")
         
-        var requestURL = URLRequest(url: selectedDayURL!)
+        let requestURL = URLRequest(url: selectedDayURL!)
         let task = URLSession.shared.dataTask(with: requestURL) { data, response, error in
             
             if error != nil {
-                print(error)
-                print("We hit error")
                 completion(error)
                 return
             }
             
             guard let data = data else {
-                print("We hit data")
                 completion(NSError())
                 return
             }
@@ -84,18 +37,11 @@ class APIController {
             let decoder = JSONDecoder()
             
             do {
-                print("We hit decode")
-                var events = try decoder.decode(Results.self, from: data)
-                self.events = events.data.events
-                print("From network call", events.data.events.count)
-                print(response)
-                
-//                print(requestURL)
+                let events = try decoder.decode(Results.self, from: data)
+                self.events = events.data!
+                self.date = events.date
                 completion(nil)
             } catch {
-                print(requestURL)
-                print("We hit catch")
-                print(error)
                 completion(error)
                 return
             }
