@@ -50,6 +50,41 @@ class HomeViewController: UIViewController {
         todaysEventsButton.layer.cornerRadius = 40
         selectDateButton.layer.cornerRadius = 40
         bookmarkButton.layer.cornerRadius = 40
+        
+        todaysEventsButton.layer.shadowOffset = CGSize(width: 0, height: 1)
+        todaysEventsButton.layer.shadowColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        todaysEventsButton.layer.shadowOpacity = 0.4
+        todaysEventsButton.layer.shadowRadius = 8
+        todaysEventsButton.layer.masksToBounds = false
+        
+        selectDateButton.layer.shadowOffset = CGSize(width: 0, height: 1)
+        selectDateButton.layer.shadowColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        selectDateButton.layer.shadowOpacity = 0.4
+        selectDateButton.layer.shadowRadius = 8
+        selectDateButton.layer.masksToBounds = false
+        
+        bookmarkButton.layer.shadowOffset = CGSize(width: 0, height: 1)
+        bookmarkButton.layer.shadowColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        bookmarkButton.layer.shadowOpacity = 0.4
+        bookmarkButton.layer.shadowRadius = 8
+        bookmarkButton.layer.masksToBounds = false
+        
+//        todaysEventsButton.layer.shadowColor = #colorLiteral(red: 0.02352941176, green: 0.07843137255, blue: 0.1921568627, alpha: 1)
+//        todaysEventsButton.layer.shadowOpacity = 1
+//        todaysEventsButton.layer.shadowOffset = .zero
+//        todaysEventsButton.layer.shadowRadius = 4
+        
+//        selectDateButton.layer.shadowColor = UIColor.black.cgColor
+//        selectDateButton.layer.shadowOpacity = 0.6
+//        selectDateButton.layer.shadowOffset = .zero
+//        selectDateButton.layer.shadowRadius = 10
+//
+//        bookmarkButton.layer.shadowColor = UIColor.black.cgColor
+//        bookmarkButton.layer.shadowOpacity = 0.6
+//        bookmarkButton.layer.shadowOffset = .zero
+//        bookmarkButton.layer.shadowRadius = 10
+        
+
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -80,4 +115,5 @@ class HomeViewController: UIViewController {
         }
     }
 }
+
 
