@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P0q-Jq-Pcc">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
@@ -14,17 +13,17 @@
             <objects>
                 <viewController id="yr1-AR-Z8o" customClass="HomeViewController" customModule="Today_In_History" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3vZ-f3-YMV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="image-10" translatesAutoresizingMaskIntoConstraints="NO" id="oaS-x8-LPA">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="mLi-r8-6vd">
-                                <rect key="frame" x="20" y="262" width="374" height="284"/>
+                                <rect key="frame" x="20" y="158" width="560" height="284"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caZ-pp-NEm">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="80"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="80"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="6nr-nS-hwO"/>
@@ -38,7 +37,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H88-HA-EX3">
-                                        <rect key="frame" x="0.0" y="102" width="374" height="80"/>
+                                        <rect key="frame" x="0.0" y="102" width="560" height="80"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="fXU-wB-txb"/>
@@ -52,7 +51,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIk-1D-Ct8">
-                                        <rect key="frame" x="0.0" y="204" width="374" height="80"/>
+                                        <rect key="frame" x="0.0" y="204" width="560" height="80"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="ugA-ob-xsh"/>
@@ -73,7 +72,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSd-UP-bTM">
-                                <rect key="frame" x="359" y="726" width="25" height="48"/>
+                                <rect key="frame" x="546" y="552" width="24" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="info.circle" catalog="system">
@@ -111,30 +110,30 @@
             </objects>
             <point key="canvasLocation" x="7310.1449275362329" y="459.375"/>
         </scene>
-        <!--Today In History-->
+        <!--Historios-->
         <scene sceneID="2nE-cm-alk">
             <objects>
                 <tableViewController modalPresentationStyle="fullScreen" id="oUD-F3-fma" customClass="EventsResultsTableViewController" customModule="Today_In_History" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="4cJ-R8-X52">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.032565658710000001" green="0.079660839639999995" blue="0.16291701189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="0.10980392156862745" green="0.14509803921568626" blue="0.37254901960784315" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                         <imageView key="tableHeaderView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="4jF-68-AmX">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="276"/>
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="276"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="EventCell" textLabel="x5j-eB-WCe" detailTextLabel="HzJ-k8-Q9Z" rowHeight="140" style="IBUITableViewCellStyleSubtitle" id="nTf-Vm-afA">
-                                <rect key="frame" x="0.0" y="304" width="414" height="140"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nTf-Vm-afA" id="gVp-dj-cTI">
-                                    <rect key="frame" x="0.0" y="0.0" width="383" height="140"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="387" height="140"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x5j-eB-WCe">
-                                            <rect key="frame" x="20" y="46" width="33.5" height="19"/>
+                                            <rect key="frame" x="57" y="-71" width="8" height="57"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
@@ -142,7 +141,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HzJ-k8-Q9Z">
-                                            <rect key="frame" x="20" y="68" width="75" height="24.5"/>
+                                            <rect key="frame" x="37" y="32" width="43" height="6"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="22"/>
@@ -165,7 +164,7 @@
                             <outlet property="delegate" destination="oUD-F3-fma" id="hFg-MH-NwX"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Today In History" leftItemsSupplementBackButton="YES" id="Tm6-Dr-6Rn"/>
+                    <navigationItem key="navigationItem" title="Historios" leftItemsSupplementBackButton="YES" id="Tm6-Dr-6Rn"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="imageBackground" destination="4jF-68-AmX" id="oKh-O9-qvu"/>
@@ -180,20 +179,20 @@
             <objects>
                 <viewController id="CSj-g4-Ywx" customClass="InfoViewController" customModule="Today_In_History" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aFd-35-V2L">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="milky-way" translatesAutoresizingMaskIntoConstraints="NO" id="Vws-pT-Tdj">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RcE-Mo-r7m">
-                                <rect key="frame" x="20" y="758.5" width="374" height="15.5"/>
+                                <rect key="frame" x="20" y="584" width="560" height="16"/>
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mkn-Wv-fi8">
-                                <rect key="frame" x="20" y="42" width="374" height="553"/>
+                                <rect key="frame" x="20" y="42" width="560" height="553"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="553" id="J7A-Vq-4Ak"/>
@@ -241,11 +240,11 @@ This app is provided as-is and free of charge for entertainment purposes only.  
             <objects>
                 <viewController interfaceStyle="light" id="q5i-6K-fym" customClass="SelectDateViewController" customModule="Today_In_History" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="84Q-I8-ycG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="QO6-hc-l4d">
-                                <rect key="frame" x="0.0" y="216" width="414" height="156"/>
+                                <rect key="frame" x="0.0" y="216" width="600" height="156"/>
                                 <color key="backgroundColor" red="0.032565658710000001" green="0.079660839639999995" blue="0.16291701189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -253,16 +252,16 @@ This app is provided as-is and free of charge for entertainment purposes only.  
                                 </constraints>
                             </pickerView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="5ty-0f-Vs7">
-                                <rect key="frame" x="116" y="271" width="182" height="26.5"/>
+                                <rect key="frame" x="209" y="271" width="182" height="27"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfk-fT-hMq">
-                                        <rect key="frame" x="0.0" y="0.0" width="52" height="26.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="52" height="27"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.1450980392" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVx-u7-HEM">
-                                        <rect key="frame" x="130" y="0.0" width="52" height="26.5"/>
+                                        <rect key="frame" x="130" y="0.0" width="52" height="27"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.1450980392" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -270,7 +269,7 @@ This app is provided as-is and free of charge for entertainment purposes only.  
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOj-lp-326">
-                                <rect key="frame" x="20" y="606" width="374" height="80"/>
+                                <rect key="frame" x="20" y="432" width="560" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="FUo-KW-5Aq"/>
@@ -286,13 +285,13 @@ This app is provided as-is and free of charge for entertainment purposes only.  
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-37" translatesAutoresizingMaskIntoConstraints="NO" id="yId-rW-Nld">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="208"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="208"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="208" id="eRQ-vF-uq6"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOo-mf-SuX">
-                                <rect key="frame" x="44" y="440" width="326" height="83"/>
+                                <rect key="frame" x="44" y="440" width="512" height="83"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="83" id="d25-bU-7gm"/>
                                 </constraints>
@@ -341,7 +340,7 @@ This app is provided as-is and free of charge for entertainment purposes only.  
             <objects>
                 <tableViewController interfaceStyle="light" id="I8N-Gm-aOY" customClass="BookmarksTableViewController" customModule="Today_In_History" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="XBg-GY-NjC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.032565658710000001" green="0.079660839639999995" blue="0.16291701189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -349,19 +348,19 @@ This app is provided as-is and free of charge for entertainment purposes only.  
                         <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="0.032565658710000001" green="0.079660839639999995" blue="0.16291701189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <imageView key="tableHeaderView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="PU5-VX-16w">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="276"/>
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="276"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BookmarkCell" textLabel="dDZ-5K-dyA" detailTextLabel="fx3-73-G6h" rowHeight="104" style="IBUITableViewCellStyleSubtitle" id="rdw-au-kR4">
-                                <rect key="frame" x="0.0" y="304" width="414" height="104"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rdw-au-kR4" id="B1H-yX-YOT">
-                                    <rect key="frame" x="0.0" y="0.0" width="383" height="104"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="387" height="104"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dDZ-5K-dyA">
-                                            <rect key="frame" x="20" y="28" width="33.5" height="19"/>
+                                            <rect key="frame" x="71" y="-49" width="21" height="7"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
@@ -369,7 +368,7 @@ This app is provided as-is and free of charge for entertainment purposes only.  
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fx3-73-G6h">
-                                            <rect key="frame" x="20" y="50" width="75" height="24.5"/>
+                                            <rect key="frame" x="63" y="-94" width="3" height="76"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="22"/>
@@ -407,23 +406,23 @@ This app is provided as-is and free of charge for entertainment purposes only.  
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="m84-Tm-WHo" customClass="EventDetailViewController" customModule="Today_In_History" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Al6-IC-4j5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CYg-E1-3Iu">
-                                <rect key="frame" x="20" y="338" width="374" height="258"/>
+                                <rect key="frame" x="20" y="304" width="560" height="118"/>
                                 <color key="backgroundColor" red="0.032565658710000001" green="0.079660839639999995" blue="0.16291701189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="SelectedEventLinkCell" textLabel="quT-Qc-tTN" rowHeight="117" style="IBUITableViewCellStyleDefault" id="9n8-Lh-NKZ">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="117"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="117"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9n8-Lh-NKZ" id="B7e-80-WC7">
-                                            <rect key="frame" x="0.0" y="0.0" width="311" height="117"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="315" height="117"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="quT-Qc-tTN">
-                                                    <rect key="frame" x="20" y="0.0" width="283" height="117"/>
+                                                    <rect key="frame" x="71" y="-21" width="87" height="17"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -442,7 +441,7 @@ This app is provided as-is and free of charge for entertainment purposes only.  
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHZ-r3-CyG">
-                                <rect key="frame" x="20" y="654" width="374" height="80"/>
+                                <rect key="frame" x="20" y="480" width="560" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="EFY-IU-Yj9"/>
@@ -457,10 +456,10 @@ This app is provided as-is and free of charge for entertainment purposes only.  
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-35" translatesAutoresizingMaskIntoConstraints="NO" id="rvG-7H-9lX">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="316"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="282"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="white" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJe-NF-R9o">
-                                <rect key="frame" x="20" y="8" width="374" height="303"/>
+                                <rect key="frame" x="20" y="8" width="560" height="269"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -537,23 +536,23 @@ This app is provided as-is and free of charge for entertainment purposes only.  
             <objects>
                 <viewController modalPresentationStyle="fullScreen" interfaceStyle="light" id="Fg4-Qj-clt" customClass="BookmarkedEventDetailViewController" customModule="Today_In_History" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lmo-Pm-Qvr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lEJ-BN-bcD">
-                                <rect key="frame" x="20" y="338" width="374" height="258"/>
+                                <rect key="frame" x="20" y="304" width="560" height="118"/>
                                 <color key="backgroundColor" red="0.032565658710000001" green="0.079660839639999995" blue="0.16291701189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="BookmarkEventLinkCell" textLabel="CNT-Lh-BnF" rowHeight="117" style="IBUITableViewCellStyleDefault" id="C2Z-MX-4ja">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="117"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="117"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C2Z-MX-4ja" id="BjJ-Fq-Cnt">
-                                            <rect key="frame" x="0.0" y="0.0" width="311" height="117"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="315" height="117"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CNT-Lh-BnF">
-                                                    <rect key="frame" x="20" y="0.0" width="283" height="117"/>
+                                                    <rect key="frame" x="13" y="-87" width="74" height="82"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -572,7 +571,7 @@ This app is provided as-is and free of charge for entertainment purposes only.  
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8o-mC-J4i">
-                                <rect key="frame" x="20" y="654" width="374" height="80"/>
+                                <rect key="frame" x="20" y="480" width="560" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="XKI-xW-74Q"/>
@@ -588,11 +587,11 @@ This app is provided as-is and free of charge for entertainment purposes only.  
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-35" translatesAutoresizingMaskIntoConstraints="NO" id="cRI-N3-vcN">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="303"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="269"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="white" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aa5-CY-gnz">
-                                <rect key="frame" x="20" y="8" width="374" height="304"/>
+                                <rect key="frame" x="20" y="8" width="560" height="270"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -654,9 +653,9 @@ This app is provided as-is and free of charge for entertainment purposes only.  
         <image name="image-10" width="487" height="982"/>
         <image name="image-35" width="487" height="982"/>
         <image name="image-37" width="487" height="982"/>
-        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="info.circle" catalog="system" width="32" height="32"/>
         <image name="milky-way" width="863" height="1280"/>
-        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="square.and.arrow.up" catalog="system" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

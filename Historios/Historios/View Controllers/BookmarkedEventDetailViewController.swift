@@ -88,7 +88,7 @@ class BookmarkedEventDetailViewController: UIViewController, UITableViewDelegate
         
         let sharedEvent = UIActivityViewController(activityItems: shareEventItems, applicationActivities: nil)
         
-        sharedEvent.popoverPresentationController?.barButtonItem = sender as! UIBarButtonItem
+        sharedEvent.popoverPresentationController?.barButtonItem = sender as? UIBarButtonItem
         present(sharedEvent, animated: true, completion: nil)
         
             // Anything you want to exclude

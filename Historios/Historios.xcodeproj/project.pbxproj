@@ -32,7 +32,7 @@
 		853A4D5225318A62007F778B /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		853A4D5925319F58007F778B /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		853A4D5D2531A2C3007F778B /* BookmarksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksTableViewController.swift; sourceTree = "<group>"; };
-		855D4DDB252E780D0075514C /* Today In History.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Today In History.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		855D4DDB252E780D0075514C /* Historios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Historios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		855D4DDE252E780D0075514C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		855D4DE0252E780D0075514C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		855D4DE5252E780D0075514C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		855D4DD2252E780D0075514C = {
 			isa = PBXGroup;
 			children = (
-				855D4DDD252E780D0075514C /* Today In History */,
+				855D4DDD252E780D0075514C /* Historios */,
 				855D4DDC252E780D0075514C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,12 +72,12 @@
 		855D4DDC252E780D0075514C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				855D4DDB252E780D0075514C /* Today In History.app */,
+				855D4DDB252E780D0075514C /* Historios.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		855D4DDD252E780D0075514C /* Today In History */ = {
+		855D4DDD252E780D0075514C /* Historios */ = {
 			isa = PBXGroup;
 			children = (
 				855D4DDE252E780D0075514C /* AppDelegate.swift */,
@@ -91,7 +91,7 @@
 				855D4E15252EEF320075514C /* Date+Extension.swift */,
 				851F27C5257A2D8D00FE34A2 /* TableviewHelper.swift */,
 			);
-			path = "Today In History";
+			path = Historios;
 			sourceTree = "<group>";
 		};
 		855D4E07252ECB670075514C /* View Controllers */ = {
@@ -138,9 +138,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		855D4DDA252E780D0075514C /* Today In History */ = {
+		855D4DDA252E780D0075514C /* Historios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 855D4DEF252E780E0075514C /* Build configuration list for PBXNativeTarget "Today In History" */;
+			buildConfigurationList = 855D4DEF252E780E0075514C /* Build configuration list for PBXNativeTarget "Historios" */;
 			buildPhases = (
 				855D4DD7252E780D0075514C /* Sources */,
 				855D4DD8252E780D0075514C /* Frameworks */,
@@ -150,9 +150,9 @@
 			);
 			dependencies = (
 			);
-			name = "Today In History";
+			name = Historios;
 			productName = "Today In History";
-			productReference = 855D4DDB252E780D0075514C /* Today In History.app */;
+			productReference = 855D4DDB252E780D0075514C /* Historios.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -169,7 +169,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 855D4DD6252E780D0075514C /* Build configuration list for PBXProject "Today In History" */;
+			buildConfigurationList = 855D4DD6252E780D0075514C /* Build configuration list for PBXProject "Historios" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -182,7 +182,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				855D4DDA252E780D0075514C /* Today In History */,
+				855D4DDA252E780D0075514C /* Historios */,
 			);
 		};
 /* End PBXProject section */
@@ -368,12 +368,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U969WBXYCP;
-				INFOPLIST_FILE = "Today In History/Info.plist";
+				INFOPLIST_FILE = Historios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Squee.This-Day-In-History";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Squee.Historios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -387,12 +387,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U969WBXYCP;
-				INFOPLIST_FILE = "Today In History/Info.plist";
+				INFOPLIST_FILE = Historios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Squee.This-Day-In-History";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Squee.Historios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -402,7 +402,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		855D4DD6252E780D0075514C /* Build configuration list for PBXProject "Today In History" */ = {
+		855D4DD6252E780D0075514C /* Build configuration list for PBXProject "Historios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				855D4DED252E780E0075514C /* Debug */,
@@ -411,7 +411,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		855D4DEF252E780E0075514C /* Build configuration list for PBXNativeTarget "Today In History" */ = {
+		855D4DEF252E780E0075514C /* Build configuration list for PBXNativeTarget "Historios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				855D4DF0252E780E0075514C /* Debug */,
