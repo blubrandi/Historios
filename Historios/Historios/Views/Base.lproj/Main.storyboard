@@ -129,12 +129,12 @@
                         <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="0.10980392156862745" green="0.14509803921568626" blue="0.37254901960784315" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                         <imageView key="tableHeaderView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="4jF-68-AmX">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="276"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="136"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="EventCell" textLabel="x5j-eB-WCe" detailTextLabel="HzJ-k8-Q9Z" rowHeight="140" style="IBUITableViewCellStyleSubtitle" id="nTf-Vm-afA">
-                                <rect key="frame" x="0.0" y="304" width="414" height="140"/>
+                                <rect key="frame" x="0.0" y="164" width="414" height="140"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nTf-Vm-afA" id="gVp-dj-cTI">
                                     <rect key="frame" x="0.0" y="0.0" width="383" height="140"/>
@@ -153,14 +153,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="22"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" red="0.023529411760000001" green="0.078431372550000003" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" red="0.109301093" green="0.14699450510000001" blue="0.37384993649999998" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="tintColor" red="0.52886172279999999" green="0.48208122419999999" blue="0.4180084825" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.032565658710000001" green="0.079660839639999995" blue="0.16291701189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="m84-Tm-WHo" kind="show" identifier="ToEventDetailVC" id="GT1-9e-hfX"/>
@@ -180,7 +180,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GFk-1t-GRA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8229" y="459"/>
+            <point key="canvasLocation" x="8228.9855072463779" y="458.70535714285711"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="Mf0-9r-D7v">
@@ -356,12 +356,12 @@ This app is provided as-is and free of charge for entertainment purposes only.  
                         <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" red="0.032565658710000001" green="0.079660839639999995" blue="0.16291701189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <imageView key="tableHeaderView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="PU5-VX-16w">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="276"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="136"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BookmarkCell" textLabel="dDZ-5K-dyA" detailTextLabel="fx3-73-G6h" rowHeight="104" style="IBUITableViewCellStyleSubtitle" id="rdw-au-kR4">
-                                <rect key="frame" x="0.0" y="304" width="414" height="104"/>
+                                <rect key="frame" x="0.0" y="164" width="414" height="104"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rdw-au-kR4" id="B1H-yX-YOT">
                                     <rect key="frame" x="0.0" y="0.0" width="383" height="104"/>
@@ -380,14 +380,14 @@ This app is provided as-is and free of charge for entertainment purposes only.  
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="22"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" red="0.023529411760000001" green="0.078431372550000003" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" red="0.109301093" green="0.14699450510000001" blue="0.37384993649999998" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="tintColor" red="0.52886172279999999" green="0.48208122419999999" blue="0.4180084825" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.032565658710000001" green="0.079660839639999995" blue="0.16291701189999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <segue destination="Fg4-Qj-clt" kind="show" identifier="ToBookmarkedEventDetailSegue" id="V1r-Tz-2Fv"/>
@@ -407,7 +407,7 @@ This app is provided as-is and free of charge for entertainment purposes only.  
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4dq-sq-aEu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8229" y="1195"/>
+            <point key="canvasLocation" x="8228.9855072463779" y="1194.6428571428571"/>
         </scene>
         <!--Event Detail View Controller-->
         <scene sceneID="21Q-W8-euf">
