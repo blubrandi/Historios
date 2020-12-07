@@ -13,6 +13,7 @@ class EventDetailViewController: UIViewController, UITableViewDelegate, UITableV
     var apiController: APIController?
     var event: Event?
     var eventDate: String?
+    var yearAndText: String?
     
     @IBOutlet weak var bookmarkEventButton: UIButton!
     @IBOutlet weak var selectedEventTextView: UITextView!
@@ -32,21 +33,22 @@ class EventDetailViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let links = event?.links
-//        print(links?.count)
         
-        return links?.count ?? 0
+        guard let links = event?.links else { return 0 }
+
+        return links.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SelectedEventLinkCell")
-        let link = event?.links![indexPath.row]
         
-        cell?.textLabel?.text = link?.title
-        cell?.textLabel?.lineBreakMode = .byWordWrapping
-        cell?.textLabel?.numberOfLines = 15
-        
-        return cell!
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SelectedEventLinkCell")
+            let link = event?.links![indexPath.row]
+            
+            cell?.textLabel?.text = link?.title
+            cell?.textLabel?.lineBreakMode = .byWordWrapping
+            cell?.textLabel?.numberOfLines = 15
+            
+            return cell!
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -58,32 +60,42 @@ class EventDetailViewController: UIViewController, UITableViewDelegate, UITableV
         present(safariVC, animated: true, completion: nil)
     }
     
-    func configureViews() {
-        
-//        self.navigationController?.set = year
-        guard let event = event else { return }
-        guard let eventDate = eventDate else { return }
-        guard let eventText = event.text else { return }
-        guard let eventYear = event.year else { return }
-        let yearAndText = "\(eventDate), \(eventYear) \n\n\(eventText)"
-        
-        bookmarkEventButton.layer.cornerRadius = 40
-        selectedEventTextView.text = yearAndText
-        
-        selectedEventLinksTableView.tableFooterView = UIView()
-        selectedEventLinksTableView.backgroundColor = #colorLiteral(red: 0.03256565871, green: 0.07966083964, blue: 0.1629170119, alpha: 1)
-    }
-    
     @IBAction func bookmarkButtonTapped(_ sender: Any) {
         print("tapped")
         
         guard let event = event else { return }
-
-        persistenceController?.createBookmarkedEvent(withDate: eventDate!, withText: event.text!, withYear: event.year!, withLinks: event.links!, isBookmarked: true)
+        
+        persistenceController?.createBookmarkedEvent(withDate: eventDate!,
+                                                     withText: event.text!,
+                                                     withYear: event.year!,
+                                                     withLinks: event.links!,
+                                                     isBookmarked: true)
         
         bookmarkEventButton.setTitle("Bookmark Saved!", for: .normal)
         bookmarkEventButton.setTitleColor(#colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1), for: .normal)
         bookmarkEventButton.isEnabled = false
+        
+    }
+    
+    func configureViews() {
+        
+        guard let event = event else { return }
+        guard let eventDate = eventDate else { return }
+        guard let eventText = event.text else { return }
+        guard let eventYear = event.year else { return }
+        yearAndText = "\(eventDate), \(eventYear) \n\n\(eventText)"
+        
+        bookmarkEventButton.layer.cornerRadius = 40
+        selectedEventTextView.text = yearAndText!
+        
+        selectedEventLinksTableView.tableFooterView = UIView()
+        selectedEventLinksTableView.backgroundColor = .white
+        
+        bookmarkEventButton.layer.shadowOffset = CGSize(width: 0, height: 1)
+        bookmarkEventButton.layer.shadowColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        bookmarkEventButton.layer.shadowOpacity = 0.4
+        bookmarkEventButton.layer.shadowRadius = 8
+        bookmarkEventButton.layer.masksToBounds = false
         
     }
     

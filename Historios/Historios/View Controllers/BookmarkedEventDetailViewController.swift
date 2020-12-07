@@ -110,34 +110,8 @@ class BookmarkedEventDetailViewController: UIViewController, UITableViewDelegate
         
         bookmarkEventTableView.tableFooterView = UIView()
         bookmarkEventTableView.backgroundColor = #colorLiteral(red: 0.03256565871, green: 0.07966083964, blue: 0.1629170119, alpha: 1)
+        
+        
     }
 }
 
-
-//// Setting description
-//let firstActivityItem = "On \(bookmark!.date), \(bookmark!.year) \(bookmark!.text) \nShared via This Day In History.\nhttps://google.com/"
-//
-//    // Setting url
-////            let secondActivityItem : NSURL = NSURL(string: "https://google.com/")!
-//
-//    // If you want to use an image
-//    let image : UIImage = UIImage(named: "AppIcon")!
-//    let activityViewController : UIActivityViewController = UIActivityViewController(
-//        activityItems: [firstActivityItem, image], applicationActivities: nil)
-//
-//    // This lines is for the popover you need to show in iPad
-//    activityViewController.popoverPresentationController?.sourceView = (sender as! UIButton)
-//
-//    // This line remove the arrow of the popover to show in iPad
-//    activityViewController.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection.down
-//    activityViewController.popoverPresentationController?.sourceRect = CGRect(x: 150, y: 150, width: 0, height: 0)
-//
-//    // Pre-configuring activity items
-//    activityViewController.activityItemsConfiguration = [
-//    UIActivity.ActivityType.message
-//    ] as? UIActivityItemsConfigurationReading
-//
-
-//
-//    activityViewController.isModalInPresentation = true
-//    self.present(activityViewController, animated: true, completion: nil)

@@ -69,22 +69,6 @@ class HomeViewController: UIViewController {
         bookmarkButton.layer.shadowRadius = 8
         bookmarkButton.layer.masksToBounds = false
         
-//        todaysEventsButton.layer.shadowColor = #colorLiteral(red: 0.02352941176, green: 0.07843137255, blue: 0.1921568627, alpha: 1)
-//        todaysEventsButton.layer.shadowOpacity = 1
-//        todaysEventsButton.layer.shadowOffset = .zero
-//        todaysEventsButton.layer.shadowRadius = 4
-        
-//        selectDateButton.layer.shadowColor = UIColor.black.cgColor
-//        selectDateButton.layer.shadowOpacity = 0.6
-//        selectDateButton.layer.shadowOffset = .zero
-//        selectDateButton.layer.shadowRadius = 10
-//
-//        bookmarkButton.layer.shadowColor = UIColor.black.cgColor
-//        bookmarkButton.layer.shadowOpacity = 0.6
-//        bookmarkButton.layer.shadowOffset = .zero
-//        bookmarkButton.layer.shadowRadius = 10
-        
-
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
