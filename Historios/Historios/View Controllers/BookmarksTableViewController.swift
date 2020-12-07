@@ -35,8 +35,10 @@ class BookmarksTableViewController: UITableViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         if persistenceController?.bookmarkedEvents.count == 0 {
-            showAlertLabel(message: "Events that you've bookmarked will appear here.")
             
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                self.showAlertLabel(message: "Events that you've bookmarked will appear here.")
+            }
             return 0
         } else {
             return 1

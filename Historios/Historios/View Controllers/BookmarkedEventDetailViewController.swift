@@ -91,7 +91,6 @@ class BookmarkedEventDetailViewController: UIViewController, UITableViewDelegate
         sharedEvent.popoverPresentationController?.barButtonItem = sender as? UIBarButtonItem
         present(sharedEvent, animated: true, completion: nil)
         
-            // Anything you want to exclude
         sharedEvent.excludedActivityTypes = [
                 UIActivity.ActivityType.postToFacebook,
             ]
@@ -109,9 +108,13 @@ class BookmarkedEventDetailViewController: UIViewController, UITableViewDelegate
         removeBookmarkButton.layer.cornerRadius = 40
         
         bookmarkEventTableView.tableFooterView = UIView()
-        bookmarkEventTableView.backgroundColor = #colorLiteral(red: 0.03256565871, green: 0.07966083964, blue: 0.1629170119, alpha: 1)
+        bookmarkEventTableView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         
-        
+        removeBookmarkButton.layer.shadowOffset = CGSize(width: 0, height: 1)
+        removeBookmarkButton.layer.shadowColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        removeBookmarkButton.layer.shadowOpacity = 0.4
+        removeBookmarkButton.layer.shadowRadius = 8
+        removeBookmarkButton.layer.masksToBounds = false
     }
 }
 
