@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		851F27C6257A2D8D00FE34A2 /* TableviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851F27C5257A2D8D00FE34A2 /* TableviewHelper.swift */; };
 		853A4D5325318A62007F778B /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853A4D5225318A62007F778B /* EventDetailViewController.swift */; };
 		853A4D5A25319F58007F778B /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853A4D5925319F58007F778B /* PersistenceController.swift */; };
 		853A4D5E2531A2C3007F778B /* BookmarksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853A4D5D2531A2C3007F778B /* BookmarksTableViewController.swift */; };
@@ -22,13 +21,13 @@
 		855D4E16252EEF330075514C /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855D4E15252EEF320075514C /* Date+Extension.swift */; };
 		85873639253053560047A13D /* SelectDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85873638253053560047A13D /* SelectDateViewController.swift */; };
 		8597D92A2531AD9000DC5F87 /* BookmarkedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8597D9292531AD9000DC5F87 /* BookmarkedEvent.swift */; };
+		85EA1170257F0E4700D78BC0 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA116F257F0E4700D78BC0 /* GradientView.swift */; };
 		85ECEE0E25776BB600B16AAA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85ECEE0D25776BB600B16AAA /* HomeViewController.swift */; };
 		85ECEE332578455C00B16AAA /* BookmarkedEventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85ECEE322578455C00B16AAA /* BookmarkedEventDetailViewController.swift */; };
 		85ECEE3D2578B19200B16AAA /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85ECEE3C2578B19200B16AAA /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		851F27C5257A2D8D00FE34A2 /* TableviewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableviewHelper.swift; sourceTree = "<group>"; };
 		853A4D5225318A62007F778B /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		853A4D5925319F58007F778B /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		853A4D5D2531A2C3007F778B /* BookmarksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksTableViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +44,7 @@
 		855D4E15252EEF320075514C /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		85873638253053560047A13D /* SelectDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDateViewController.swift; sourceTree = "<group>"; };
 		8597D9292531AD9000DC5F87 /* BookmarkedEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkedEvent.swift; sourceTree = "<group>"; };
+		85EA116F257F0E4700D78BC0 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		85ECEE0D25776BB600B16AAA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		85ECEE322578455C00B16AAA /* BookmarkedEventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkedEventDetailViewController.swift; sourceTree = "<group>"; };
 		85ECEE3C2578B19200B16AAA /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
@@ -89,7 +89,6 @@
 				855D4E0F252ED1BB0075514C /* Views */,
 				855D4E07252ECB670075514C /* View Controllers */,
 				855D4E15252EEF320075514C /* Date+Extension.swift */,
-				851F27C5257A2D8D00FE34A2 /* TableviewHelper.swift */,
 			);
 			path = Historios;
 			sourceTree = "<group>";
@@ -104,6 +103,7 @@
 				853A4D5D2531A2C3007F778B /* BookmarksTableViewController.swift */,
 				85ECEE322578455C00B16AAA /* BookmarkedEventDetailViewController.swift */,
 				85ECEE3C2578B19200B16AAA /* InfoViewController.swift */,
+				85EA116F257F0E4700D78BC0 /* GradientView.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -207,10 +207,10 @@
 			files = (
 				85ECEE332578455C00B16AAA /* BookmarkedEventDetailViewController.swift in Sources */,
 				853A4D5325318A62007F778B /* EventDetailViewController.swift in Sources */,
+				85EA1170257F0E4700D78BC0 /* GradientView.swift in Sources */,
 				853A4D5E2531A2C3007F778B /* BookmarksTableViewController.swift in Sources */,
 				855D4DF9252E7DF60075514C /* Event.swift in Sources */,
 				85ECEE3D2578B19200B16AAA /* InfoViewController.swift in Sources */,
-				851F27C6257A2D8D00FE34A2 /* TableviewHelper.swift in Sources */,
 				855D4DDF252E780D0075514C /* AppDelegate.swift in Sources */,
 				855D4DF6252E7D230075514C /* EventsResultsTableViewController.swift in Sources */,
 				8597D92A2531AD9000DC5F87 /* BookmarkedEvent.swift in Sources */,

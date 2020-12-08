@@ -13,41 +13,36 @@ class BookmarksTableViewController: UITableViewController {
     
     @IBOutlet weak var backgroundImage: UIImageView!
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configureViews()
-        persistenceController?.loadFromPersistence()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
+        persistenceController?.loadFromPersistence()
         tableView.reloadData()
+        
+        if persistenceController?.bookmarkedEvents.count == 0 {
+            showAlertLabel(message: "Events that you've bookmarked \nwill appear here.")
+        } else {
+            showAlertLabel(message: "")
+        }
+        
     }
     
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        if persistenceController?.bookmarkedEvents.count == 0 {
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-                self.showAlertLabel(message: "Events that you've bookmarked will appear here.")
-            }
-            return 0
-        } else {
-            return 1
-        }
+        
+        return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        persistenceController?.bookmarkedEvents.count ?? 0
+        return persistenceController?.bookmarkedEvents.count ?? 0
         
     }
     
@@ -78,12 +73,12 @@ class BookmarksTableViewController: UITableViewController {
     
     func configureViews() {
         
-        let randomNumber = Int.random(in: 1...50)
+        let randomNumber = Int.random(in: 1...53)
         
         backgroundImage.image = UIImage(named: "image-\(randomNumber)")
-        
+
         tableView.tableFooterView = UIView()
-        tableView.backgroundColor = #colorLiteral(red: 0.03256565871, green: 0.07966083964, blue: 0.1629170119, alpha: 1)
+        tableView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
     }
 }
 
@@ -93,7 +88,7 @@ extension BookmarksTableViewController {
         let rect = CGRect(origin: CGPoint(x: 0,y :0), size: CGSize(width: view.bounds.size.width, height: view.bounds.size.height))
         let messageLabel = UILabel(frame: rect)
         messageLabel.text = message
-        messageLabel.textColor = .white
+        messageLabel.textColor = #colorLiteral(red: 0.02352941176, green: 0.07843137255, blue: 0.1921568627, alpha: 1)
         messageLabel.numberOfLines = 2
         messageLabel.textAlignment = .center
         messageLabel.font = UIFont(name: "Palatino", size: 24)

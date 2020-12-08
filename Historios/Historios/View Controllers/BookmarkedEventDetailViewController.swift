@@ -7,6 +7,7 @@
 
 import UIKit
 import SafariServices
+import LinkPresentation
 
 class BookmarkedEventDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, SFSafariViewControllerDelegate {
     
@@ -17,6 +18,7 @@ class BookmarkedEventDetailViewController: UIViewController, UITableViewDelegate
     
     var persistenceController: PersistenceController?
     var bookmark: BookmarkedEvent?
+//    var urlOfImageToShare: URL?
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -84,9 +86,10 @@ class BookmarkedEventDetailViewController: UIViewController, UITableViewDelegate
               let bookmarkText = bookmark?.text
         else { return }
         
-        let shareEventItems: [Any] = ["Today In History", "\nOn This Day: \(bookmarkDate), \(bookmarkYear) \n\(bookmarkText)\n", "https://rb.gy/ciq6si", "\nShared via the This Day In History app on the iOS App Store"]
-        
-        let sharedEvent = UIActivityViewController(activityItems: shareEventItems, applicationActivities: nil)
+//        let img = UIImage(named: "shareIcon")!
+
+        let shareText = "Historios: \nOn \(bookmarkDate), \(bookmarkYear) \n\(bookmarkText)"
+        let sharedEvent = UIActivityViewController(activityItems: [shareText], applicationActivities: nil)
         
         sharedEvent.popoverPresentationController?.barButtonItem = sender as? UIBarButtonItem
         present(sharedEvent, animated: true, completion: nil)
@@ -94,6 +97,7 @@ class BookmarkedEventDetailViewController: UIViewController, UITableViewDelegate
         sharedEvent.excludedActivityTypes = [
                 UIActivity.ActivityType.postToFacebook,
             ]
+        
     }
     
     func configureViews() {
@@ -117,4 +121,25 @@ class BookmarkedEventDetailViewController: UIViewController, UITableViewDelegate
         removeBookmarkButton.layer.masksToBounds = false
     }
 }
+
+//extension BookmarksTableViewController: UIActivityItemSource {
+//
+//    func activityViewControllerPlaceholderItem(_ activityViewController: UIActivityViewController) -> Any {
+//        return UIImage()
+//    }
+//
+//    func activityViewController(_ activityViewController: UIActivityViewController, itemForActivityType activityType: UIActivity.ActivityType?) -> Any? {
+//        return urlOfImageToShare
+//    }
+//
+//    func activityViewControllerLinkMetadata(_ activityViewController: UIActivityViewController) -> LPLinkMetadata? {
+//        let metadata = LPLinkMetadata()
+//
+//        metadata.title = "Historios"
+//        metadata.originalURL = urlOfImageToShare
+//        metadata.url = urlOfImageToShare
+//        metadata.imageProvider = NSItemProvider.init(contentsOf: urlOfImageToShare)
+//        metadata.iconProvider = NSItemProvider.init(contentsOf: urlOfImageToShare)
+//    }
+//}
 

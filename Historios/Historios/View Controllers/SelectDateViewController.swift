@@ -142,11 +142,19 @@ class SelectDateViewController: UIViewController, UIPickerViewDelegate, UIPicker
     }
     
     func configureViews() {
-        let randomNum = Int.random(in: 1...50)
+        let randomNum = Int.random(in: 1...53)
         
         backgroundImage.image = UIImage(named: "image-\(randomNum)")
         
         getEventsButton.layer.cornerRadius = 40
+        getEventsButton.layer.shadowOffset = CGSize(width: 0, height: 1)
+        getEventsButton.layer.shadowColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        getEventsButton.layer.shadowOpacity = 0.4
+        getEventsButton.layer.shadowRadius = 8
+        getEventsButton.layer.masksToBounds = false
+        
+        let datePickerTextColor = #colorLiteral(red: 0.02352941176, green: 0.07843137255, blue: 0.1921568627, alpha: 1)
+        datePicker.setValue(datePickerTextColor, forKey: "textColor")
         
     }
     

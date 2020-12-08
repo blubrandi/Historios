@@ -16,6 +16,8 @@ class EventsResultsTableViewController: UITableViewController {
     var setDay: String?
     var persistenceController: PersistenceController?
     var monthForTitle: String?
+    var errorEvent: Event?
+    var filteredEvents: [Event]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,11 +26,12 @@ class EventsResultsTableViewController: UITableViewController {
         
         apiController.getSelectedEvents(month: setMonth!, day: setDay!) {[weak self] (error) in
             DispatchQueue.main.async {
-
+                
                 self?.tableView.reloadData()
             }
         }
         configureViews()
+        
     }
 
     // MARK: - Table view data source
@@ -45,7 +48,7 @@ class EventsResultsTableViewController: UITableViewController {
         let event = apiController.events[indexPath.row]
         
         cell.textLabel?.text = "\(event.year ?? "Year Unknown")"
-        cell.detailTextLabel?.text = event.text
+        cell.detailTextLabel?.text = "\(event.text ?? "Info Unknown")"
 
         return cell
     }
@@ -65,12 +68,17 @@ class EventsResultsTableViewController: UITableViewController {
     
     func configureViews() {
         self.title = "\(monthForTitle!) \(setDay!)"
+        
+        self.tableView.backgroundView = UIView()
+        self.tableView.backgroundView!.backgroundColor = .white
+        
         tableView.tableFooterView = UIView()
-        tableView.backgroundColor = #colorLiteral(red: 0.03256565871, green: 0.07966083964, blue: 0.1629170119, alpha: 1)
+        tableView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+
     }
     
     func configureBackgroundImage() {
-        let randomNum = Int.random(in: 1...50)
+        let randomNum = Int.random(in: 1...53)
         imageBackground.image = UIImage(named: "image-\(randomNum)") 
     }
     

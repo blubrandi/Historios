@@ -72,7 +72,7 @@ class EventDetailViewController: UIViewController, UITableViewDelegate, UITableV
                                                      isBookmarked: true)
         
         bookmarkEventButton.setTitle("Bookmark Saved!", for: .normal)
-        bookmarkEventButton.setTitleColor(#colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1), for: .normal)
+        bookmarkEventButton.setTitleColor(#colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1), for: .normal)
         bookmarkEventButton.isEnabled = false
         
     }

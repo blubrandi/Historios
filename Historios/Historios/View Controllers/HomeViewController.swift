@@ -9,7 +9,6 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    @IBOutlet weak var homeBackgroundImage: UIImageView!
     @IBOutlet weak var todaysEventsButton: UIButton!
     @IBOutlet weak var selectDateButton: UIButton!
     @IBOutlet weak var bookmarkButton: UIButton!
@@ -28,7 +27,7 @@ class HomeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
-        configureBackgroundImg()
+//        configureBackgroundImg()
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
@@ -39,12 +38,12 @@ class HomeViewController: UIViewController {
     }
     
     
-    func configureBackgroundImg() {
-        
-        let randomNumber = Int.random(in: 1...50)
-        
-        homeBackgroundImage.image = UIImage(named: "image-\(randomNumber)")
-    }
+//    func configureBackgroundImg() {
+//
+//        let randomNumber = Int.random(in: 1...50)
+//
+//        homeBackgroundImage.image = UIImage(named: "image-\(randomNumber)")
+//    }
     
     func configureButtons() {
         todaysEventsButton.layer.cornerRadius = 40
