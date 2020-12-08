@@ -26,7 +26,7 @@ class BookmarksTableViewController: UITableViewController {
         tableView.reloadData()
         
         if persistenceController?.bookmarkedEvents.count == 0 {
-            showAlertLabel(message: "Events that you've bookmarked \nwill appear here.")
+            showAlertLabel(message: "Bookmarked events \nwill appear here.")
         } else {
             showAlertLabel(message: "")
         }
